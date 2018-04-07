@@ -1,0 +1,93 @@
+{
+	"type": "Collection",
+	"properties": {
+		"account": {
+			"name": "account",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "account",
+			"order": 0
+		},
+		"leverage": {
+			"name": "leverage",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "leverage",
+			"order": 1
+		},
+		"currency": {
+			"name": "currency",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "currency",
+			"order": 2
+		},
+		"balance": {
+			"name": "balance",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "balance",
+			"order": 3
+		},
+		"credit": {
+			"name": "credit",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "credit",
+			"order": 4
+		},
+		"equity": {
+			"name": "equity",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "equity",
+			"order": 5
+		},
+		"free": {
+			"name": "free",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "free",
+			"order": 6
+		},
+		"level": {
+			"name": "level",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "level",
+			"order": 7
+		},
+		"profit": {
+			"name": "profit",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "profit",
+			"order": 8
+		},
+		"accountType": {
+			"name": "accountType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "accountType",
+			"order": 9
+		},
+		"gate": {
+			"name": "gate",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "gate",
+			"order": 10
+		}
+	}
+}

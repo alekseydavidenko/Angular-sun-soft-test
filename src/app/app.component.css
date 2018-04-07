@@ -1,0 +1,352 @@
+.header {
+  width: 100%;
+  height: 500px;
+  background: url("../assets/img/header-bg.jpg") no-repeat center top;
+  background-size: cover;
+  background-color: #01122b;
+}
+.header-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 65px 0 35px;
+  text-transform: none;
+}
+.header-description {
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  margin-left: 35px;
+}
+.header-description::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url("../assets/img/header-point.png") no-repeat;
+  left: -35px;
+  top: 5px;
+}
+.header-btn,
+.scale-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin-top: 55px;
+  background-color: #f25830;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.header-btn:hover {
+  box-shadow: 0px 0px 15px 0px #f25830;
+}
+.scale-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-transform: none;
+  text-align: center;
+  position: relative;
+}
+.scale-title::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: url("../assets/img/record.png") no-repeat;
+  margin-left: 15px;
+  margin-top: 11px;
+}
+.scale-img {
+  width: 100%;
+  height: 410px;
+  background: url("../assets/img/scale.png") no-repeat center top;
+  background-size: cover;
+}
+.advantages {
+  margin-top: 90px;
+}
+.advantages-item {
+  text-align: center;
+}
+.advantages-item-img {
+  margin-bottom: 25px;
+}
+.advantages-item-caption {
+  font-size: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+.bold {
+  font-weight: bold;
+}
+.scale-btn {
+  width: auto;
+  font-size: 14px;
+  margin: 60px auto 90px;
+}
+.table-main {
+  min-height: 695px;
+  position: relative;
+}
+.table-bg {
+  width: 100%;
+  height: 695px;
+  background: url("../assets/img/tabel-bg.png") no-repeat center top;
+  background-size: cover;
+  background-color: #01122b;
+  position: absolute;
+  z-index: -1;
+}
+.table-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 75px;
+  margin-bottom: 40px;
+  text-transform: none;
+  text-align: center;
+}
+.actives,
+.orders {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 27px 0px rgba(148, 172, 184, 0.32);
+}
+.actives-title,
+.orders-title {
+  font-size: 24px;
+  color: #2e4453;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.actives-description {
+  font-size: 13px;
+}
+.actives-caption {
+  font-size: 15px;
+  font-weight: bold;
+  color: #253138;
+}
+.orders {
+  margin-top: 10px;
+  padding: 0;
+}
+.orders-header {
+  border-bottom: 1px solid #dde7ee;
+  height: 60px;
+}
+.orders-main-left {
+  margin: 15px 0 0 20px;
+}
+.orders-title {
+  display: inline-block;
+  margin: 0;
+}
+.select {
+  margin-left: 20px;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-color: #a8bece;
+  border-radius: 3px;
+  outline: none;
+}
+.select-icon {
+  display: inline-block;
+  position: relative;
+}
+.select-icon::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  background: url("../assets/img/select-arrow.jpg");
+  right: 7px;
+  top: 11px;
+}
+.radio {
+  margin: 22px 20px 0 0;
+}
+.radio-real,
+.radio-demo {
+  font-size: 13px;
+  color: #253138;
+}
+.radio-real {
+  margin-right: 10px;
+}
+.radio-demo {
+  margin-left: 10px;
+}
+.active {
+  font-weight: 600;
+}
+.radio-icon {
+  display: inline-block;
+  width: 35px;
+  height: 15px;
+  background: #1961e5;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.radio-icon::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  left: 2px;
+  top: 2px;
+  transition: all 0.3s;
+}
+.change-position::before {
+  left: 22px;
+}
+.orders-item {
+  border-bottom: 1px solid #ebeef1;
+}
+.orders-item:last-child {
+  border: none;
+}
+.orders-container {
+  padding: 15px 20px 25px;
+}
+.orders-gate {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background: #1961e5;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.orders-link,
+.info-link {
+  text-decoration: underline;
+}
+.settings {
+  position: relative;
+}
+.settings::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: url("../assets/img/oreder-setting.png") no-repeat;
+  top: 6px;
+  left: 7px;
+  cursor: pointer;
+}
+.orders-info {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.orders-info-item {
+  font-size: 13px;
+  color: #2e4453;
+}
+.info {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.info-title {
+  margin: 50px 0 70px;
+}
+.caption {
+  margin-top: 50px;
+  color: #26333b;
+}
+
+/* media */
+
+@media screen and (max-width: 1255px) {
+  .scale-img {
+    height: 267px;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .scale-title::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-btn {
+    margin-top: 30px;
+  }
+  .header-logo-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .orders-header {
+    height: auto;
+  }
+  .radio {
+    margin: 22px 0 20px 20px;
+  }
+  .actives-item {
+    margin-bottom: 30px;
+  }
+  .advantages-item {
+    margin-bottom: 40px;
+  }
+  .scale-btn {
+    margin: 20px auto 50px;
+  }
+  .info-item {
+    margin-bottom: 40px;
+  }
+  .info-item:last-child {
+    margin-bottom: 0;
+  }
+  .orders-info-item {
+    margin-bottom: 15px;
+  }
+  .scale-img {
+    height: 210px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .select {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .orders-title {
+    margin-bottom: 15px;
+  }
+  .radio {
+    margin-top: 0;
+  }
+  .header-logo,
+  .scale-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 344px) {
+  .header-title,
+  .scale-title,
+  .table-title,
+  .info-title {
+    font-size: 24px;
+  }
+  .table-title {
+    padding-top: 35px;
+  }
+}
+

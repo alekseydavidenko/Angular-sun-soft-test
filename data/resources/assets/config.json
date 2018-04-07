@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"account": {
+			"name": "account",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "account",
+			"order": 0
+		},
+		"safe": {
+			"name": "safe",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "safe",
+			"order": 1
+		},
+		"friend": {
+			"name": "friend",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "friend",
+			"order": 2
+		},
+		"moneyBox": {
+			"name": "moneyBox",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "moneyBox",
+			"order": 3
+		},
+		"partner": {
+			"name": "partner",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "partner",
+			"order": 4
+		},
+		"total": {
+			"name": "total",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "total",
+			"order": 5
+		}
+	}
+}

@@ -1,20 +1,175 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<section class="header">
+  <div class="main-container row">
+    <div class="col-5 header-logo">
+      <img class="header-logo-img" src="../assets/img/logo-bg.png" alt="logo">
+    </div>
+    <div class="col-12 col-sm-7">
+      <h2 class="header-title">Зарабатывайте деньги на самой дорогой криптовалюте в мире</h2>
+      <p class="header-description">Высокая скорость</p>
+      <p class="header-description">Приносит прибыль</p>
+      <p class="header-description">Работает без выходных</p>
+      <button class="header-btn">торгуй Bitcoin</button>
+    </div>
+  </div>
+</section>
+<section class="scale">
+  <h2 class="scale-title main-container">Bitcoin — рекордсмен по волатильности</h2>
+  <div class="scale-img"></div>
+  <div class="advantages main-container row">
+    <div class="advantages-item col-12 col-md-4">
+      <img src="../assets/img/market-move.png" alt="market-move" class="advantages-item-img">
+      <div class="advantages-item-caption">Рыночные движения криптовалюты Bitcoin в среднем
+        <span class="bold">до 40 раз сильнее движений валютных инструментов Forex!</span>
+      </div>
+    </div>
+    <div class="advantages-item col-12 col-md-4">
+      <img src="../assets/img/population.png" alt="population" class="advantages-item-img">
+      <div class="advantages-item-caption">Высокая популярность Bitcoin и высокая рыночная активность
+        <span class="bold">позволяют хорошо зарабатывать</span> внутридневной торговлей
+        <span class="bold">в любое время суток!</span>
+      </div>
+    </div>
+    <div class="advantages-item col-12 col-md-4">
+      <img src="../assets/img/decentralisation.png" alt="decentralisation" class="advantages-item-img">
+      <div class="advantages-item-caption">"Bitcoin децентрализован и
+        <span class="bold">активность торговли не привязана</span> к выходу статистических данных
+        <span class="bold">в какой-либо стране!</span>
+      </div>
+    </div>
+    <button class="scale-btn">торгуй каждую минуту</button>
+  </div>
+</section>
+<section class="table-main">
+  <div class="table-bg"></div>
+  <h2 class="table-title main-container">Торгуй Bitcoin!</h2>
+  <div class="actives container">
+    <h3 class="actives-title">Активы</h3>
+    <div class="actives-info row" *ngFor="let item of assets">
+      <div class="actives-item col-4 col-md-2">
+        <p class="actives-description">Всего средств</p>
+        <p class="actives-caption" *ngIf="item.total.usd">&#36;{{ item.total.usd | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.total.eur">&euro;{{ item.total.eur | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.total.rub">&#8381;{{ item.total.rub | number:'1.2-2' }}</p>
+      </div>
+      <div class="actives-item col-4 col-md-2">
+        <p class="actives-description">Торговые счета</p>
+        <p class="actives-caption" *ngIf="item.account.usd">&#36;{{ item.account.usd | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.account.eur">&euro;{{ item.account.eur | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.account.rub">&#8381;{{ item.account.rub | number:'1.2-2' }}</p>
+      </div>
+      <div class="actives-item col-4 col-md-2">
+        <p class="actives-description">Сейф</p>
+        <p class="actives-caption" *ngIf="item.safe.usd">&#36;{{ item.safe.usd | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.safe.eur">&euro;{{ item.safe.eur | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.safe.rub">&#8381;{{ item.safe.rub | number:'1.2-2'  }}</p>
+      </div>
+      <div class="actives-item col-4 col-md-2">
+        <p class="actives-description">Приведи друга</p>
+        <p class="actives-caption" *ngIf="item.friend.usd">&#36;{{ item.friend.usd | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.friend.eur">&euro;{{ item.friend.eur | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.friend.rub">&#8381;{{ item.friend.rub | number:'1.2-2' }}</p>
+      </div>
+      <div class="actives-item col-4 col-md-2">
+        <p class="actives-description">Копилка</p>
+        <p class="actives-caption" *ngIf="item.moneyBox.usd">&#36;{{ item.moneyBox.usd | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.moneyBox.eur">&euro;{{ item.moneyBox.eur | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.moneyBox.rub">&#8381;{{ item.moneyBox.rub | number:'1.2-2' }}</p>
+      </div>
+      <div class="actives-item col-4 col-md-2">
+        <p class="actives-description">Партнер</p>
+        <p class="actives-caption" *ngIf="item.partner.usd">&#36;{{ item.partner.usd | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.partner.eur">&euro;{{ item.partner.eur | number:'1.2-2' }}</p>
+        <p class="actives-caption" *ngIf="item.partner.rub">&#8381;{{ item.partner.rub | number:'1.2-2' }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="orders container">
+    <div class="orders-header d-flex align-items-start justify-content-between flex-md-row flex-column">
+      <div class="orders-main-left d-flex align-items-sm-center align-items-start flex-sm-row flex-column">
+        <h3 class="orders-title">Счета</h3>
+        <div class="select-icon">
+          <select class="select" [(ngModel)]="selectedGate">
+            <option *ngFor="let item of selectGate">{{ item }}</option>
+          </select>
+        </div>
+        <div class="select-icon">
+          <select class="select" [(ngModel)]="selectedAccountType">
+            <option *ngFor="let item of selectAccountType">{{ item }}</option>
+          </select>
+        </div>
+        <div class="select-icon">
+          <select class="select">
+            <option>Выбрать счет</option>
+          </select>
+        </div>
+      </div>
+      <span class="radio d-flex align-items-center">
+        <span class="radio-real" [class.active]="!radioPosition">REAL</span>
+        <div class="radio-icon" (click)="radioCange()" [class.change-position]="radioPosition"></div>
+        <span class="radio-demo" [class.active]="radioPosition">DEMO</span>
+      </span>
+    </div>
+    <div class="orders-body">
+      <div class="orders-item" *ngFor="let item of (accounts | gatePipe:selectedGate | accountTypePipe:selectedAccountType)">
+        <div class="orders-container">
+          <span class="orders-gate">{{ item.gate }}</span>
+          <a href="#" class="orders-link">
+            <span class="account-type">{{ item.accountType }}</span>
+            <span class="account">#{{ item.account }}</span>
+            <span class="currency">{{ item.currency }}</span>
+          </a>
+          <span class=settings></span>
+          <div class="orders-info d-flex flex-row justify-content-between row">
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Плечо</p>
+              <p class="bold">1:{{ item.leverage }}</p>
+            </div>
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Баланс</p>
+              <p class="bold">{{ item.balance | number:'1.2-2' }}</p>
+            </div>
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Кредит</p>
+              <p class="bold">{{ item.credit | number:'1.2-2' }}</p>
+            </div>
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Средства</p>
+              <p class="bold">{{ item.equity | number:'1.2-2' }}</p>
+            </div>
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Свободно</p>
+              <p class="bold">{{ item.free | number:'1.2-2' }}</p>
+            </div>
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Уровень</p>
+              <p class="bold">{{ item.level | number:'1.2-2' }}</p>
+            </div>
+            <div class="orders-info-item col-md-1 col-4">
+              <p>Прибыль</p>
+              <p class="bold">{{ item.profit | number:'1.2-2' }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="info main-container">
+  <h2 class="info-title">Как начать торговлю?</h2>
+  <div class="row">
+    <div class="col-12 col-md-4 info-item">
+      <img src="../assets/img/info-01.png" alt="info-01">
+      <p class="caption">
+        <a href="#" class="info-link">Зарегистрироваться</a> на сайте и открыть Crypro счет</p>
+    </div>
+    <div class="col-12 col-md-4 info-item">
+      <img src="../assets/img/info-02.png" alt="info-02">
+      <p class="caption">
+        <a href="#" class="info-link">Скачать</a> и установить платформу MT4, после чего авторизировать в ней Crypro счет</p>
+    </div>
+    <div class="col-12 col-md-4 info-item">
+      <img src="../assets/img/info-03.png" alt="">
+      <p class="caption">Начать торговать и зарабатывать!</p>
+    </div>
+  </div>
+</section>
